@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Notevent</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_add">Crear Evento</string>
+    <string name="menu_modify">Modificar</string>
+    <string name="menu_delete">Borrar</string>
+    <string name="et_event">Descripción del evento...</string>
+    <string name="event_add">Evento añadido</string>
+    <string name="event_notadd">No se ha guardado ningún evento</string>
+    <string name="new_event">Nuevo Evento</string>
+    <string name="event_modify">Evento modificado</string>
+    <string name="event_notmodify">No se ha modificado el evento</string>
+    <string name="delete_event">Eliminar Evento</string>
+    <string name="event_deleted">Evento eliminado</string>
+    <string name="january">Enero</string>
+    <string name="february">Febrero</string>
+    <string name="march">Marzo</string>
+    <string name="april">Abril</string>
+    <string name="may">Mayo</string>
+    <string name="june">Junio</string>
+    <string name="july">Julio</string>
+    <string name="august">Agosto</string>
+    <string name="september">Septiembre</string>
+    <string name="october">Octubre</string>
+    <string name="november">Noviembre</string>
+    <string name="december">Diciembre</string>
+
+
+</resources>
