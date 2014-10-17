@@ -33,6 +33,7 @@ public class Event implements Comparable<Event> {
     public int getMonthNumber() {
         return month+1;
     }
+
     public String getMonth(){
         return monthList[month];
     }

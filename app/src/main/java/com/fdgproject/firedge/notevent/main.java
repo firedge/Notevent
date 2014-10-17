@@ -30,7 +30,6 @@ public class main extends Activity {
 
     private ArrayList<Event> events = new ArrayList<Event>();
     private Adapter adp;
-    //LayoutInflater inflater = LayoutInflater.from(this);
 
     /********************************************************************************************/
     /*                                                                                          */
@@ -95,6 +94,7 @@ public class main extends Activity {
     /*                                                                                          */
     /********************************************************************************************/
 
+    //Método para iniciar los componentes, que se lanzará nada más arrancar la aplicación
     private void initcomponents(){
         String[] months = {getString(R.string.january), getString(R.string.february), getString(R.string.march),
                 getString(R.string.april), getString(R.string.may), getString(R.string.june),
@@ -127,15 +127,18 @@ public class main extends Activity {
         registerForContextMenu(lv);
     }
 
+    //Método para lanzar mensajes
     private void toast(String s){
         Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
     }
 
+    //Método para ordenar y actualizar el ListView
     private void actualization(){
         Collections.sort(events);
         adp.notifyDataSetChanged();
     }
 
+    //Método para cargar algunos eventos iniciales en nuestra aplicación
     private void generateEvents(){
         events.add(new Event(8, 3, 2013, "Día para recordar", 20, 0));
         events.add(new Event(15, 8, 2014, "Primer día de clase", 8, 15));
@@ -218,6 +221,7 @@ public class main extends Activity {
         return true;
     }
 
+    //Método para eliminar eventos del ListView y del ArrayList
     public boolean delete(final int index){
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle(getResources().getString(R.string.delete_event));
